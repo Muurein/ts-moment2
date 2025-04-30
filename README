@@ -1,0 +1,12 @@
+# TypeScript - moment 2
+
+Projektet ska skapa en "att göra"-applikation med TypeScript och objektorienterad programmering. 
+
+Användaren ska kunna lägga till uppgifter, ta bort dem och markera dem som klara. 
+
+
+## Steg
+
+Steg 1 : skapa todo-interface v
+
+Steg 2: använd todo-klass

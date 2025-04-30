@@ -25,4 +25,57 @@ setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
 
 /* ------------------------------------------------------------------------------------------------------------ */
 
+/*
+  FUNKTIONALITET:
+  1. ett formulär för att lägga till nya todos med textfält för uppgift och prio
+  2. ett område för att visa en lista över alla todos
+  3. en knapp för att markera todos som klara
+  4. responsiv design
+  5. utökad funktionalitet, säg ta bort todos eller visa datum när de lades till
+*/
+ export interface Todo {
+  task: string,
+  completed: boolean,
+  priority: number /* 1 ska vara viktigast och 3 minst viktigt*/
+}
 
+
+export class TodoList implements Todo {
+  task: string;
+  completed: boolean;
+  priority: number; /* 1 ska vara viktigast och 3 minst viktigt*/
+  todos: Todo[];
+
+  constructor(task: string, completed: boolean, priority: number, todos: Todo[]) {
+    this.task = task;
+    this.completed = completed;
+    this.priority = priority;
+    this.todos = todos;
+    //ska init todos-arrayen SAMT ladda todos från localStorage vid skapandet av ett nytt TodoList-objekt
+  }
+
+  addToDo(task: string, priority: number): boolean {
+    if (this.task && this.priority === undefined) { /* vad ska jag använda istället? */
+      return false;
+    } else {
+      return true;
+    }
+  };
+
+  markToDoCompleted(todoIndex: number): void { /* vad ska den här göra exakt? */
+    console.log("Metod för att markera todos som klara");
+  }
+  
+  getTodos(): Todo[] {
+    console.log("Metod för för att hämta hela listan av todos");
+  }
+
+  savetoLocalStorage(): void {
+    console.log("Metod för att spara todos till localStorage");
+  }
+
+  loadFromLocalStorage(): void {
+    console.log("Metod för att hämta todos från localStorage");
+  }
+
+}
