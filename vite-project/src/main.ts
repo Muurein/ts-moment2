@@ -1,4 +1,4 @@
-import './style.css'
+/*import './styles.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
@@ -21,7 +21,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </div>
 `
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)*/
 
 /* ------------------------------------------------------------------------------------------------------------ */
 
@@ -33,6 +33,8 @@ setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
   4. responsiv design
   5. utökad funktionalitet, säg ta bort todos eller visa datum när de lades till
 */
+
+//lägg in i egen fil
  export interface Todo {
   task: string,
   completed: boolean,
@@ -66,7 +68,7 @@ export class TodoList implements Todo {
     console.log("Metod för att markera todos som klara");
   }
   
-  getTodos(): Todo[] {
+  getTodos(): void { //ska var :Todo[]?
     console.log("Metod för för att hämta hela listan av todos");
   }
 
@@ -79,3 +81,11 @@ export class TodoList implements Todo {
   }
 
 }
+
+//variabler för formuläret
+const formEl = document.getElementById("todoList") as HTMLFormElement;
+const taskEl = document.getElementById("task") as HTMLInputElement;
+const priorityEl = document.getElementById("priority") as HTMLInputElement;
+const buttonEl = document.getElementById("submitButton") as HTMLButtonElement;
+
+
