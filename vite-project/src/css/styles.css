@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header, footer {
+    background-color:rgb(206, 93, 13);
+    color: white;
+    height: 90px; 
+}
+
+.logo {
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+main {
+    width: 70%;
+    height: auto;
+    text-align: center;
+    margin: auto auto;
+    margin-top: 30px;
+    padding-top: 6%; 
+    padding-bottom: 6%;
+    padding-left: 2%;
+    padding-right: 2%;  
+}
+
+#formDiv {
+    background-color: rgb(255, 250, 232);
+    border: 10px dotted rgb(221, 196, 159);
+    margin-bottom: 20%;
+}
+
+#formDiv h2 {
+    padding: 4%;
+}
+
+#formDiv input {
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#formDiv button {
+    margin-bottom: 8%;
+    background-color: saddlebrown;
+    color: white;
+    padding: 5%;
+    border-radius: 50%;
+    border: 1px solid rgb(102, 69, 48);
+}
+
+#todoDiv{
+    background-color: rgb(255, 250, 232);
+    border: 10px dotted rgb(221, 196, 159);
+    margin-bottom: 20%;
+    padding-top: 10%;
+    padding-bottom: 3%;
+}
+
+#todoLDiv h2 {
+    color:black;
+}
+#todoDiv p {
+    margin: 3%;
+}
+
+#todoDiv button {
+    background-color: rgb(62, 134, 62);
+    color: white;
+    padding: 5%;
+    border-radius: 50%;
+    border: 1px solid rgb(50, 112, 50);
+    margin-bottom: 20%;
+}
+
+#todoDiv button:hover {
+    background-color: rgb(33, 49, 33);
+    border: 1px solid rgb(27, 34, 27);
+    cursor: pointer;
+}
+
+hr {
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 30px;
+}

@@ -5,32 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moment 2</title>
 
-    <link rel="stylesheet" href="styles.css">
-    <script src="main.ts" type="module" defer></script>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <script src="src/main.ts" type="module" defer></script>
 </head>
 
 <body>
-    <h1>Det funkar nu</h1>
-    <main>
-        <form id="todoForm">
-            <label class="label" for="task">Uppgift:</label>
-            <br>
-            <input type="text" id="task" name="task">
-            <br>
-            <label class="label" for="priority">Prioritet:</label>
-            <br>
-            <input type="text" id="priority" name="priority">
-            <p id="instruction"></p>
-            <br>
-            <button class="submit-button" id="submitButton">Skicka</button>
-        </form>
+    <header>
+        <h1 class="logo">Månadens uppgifter</h1>
+    </header>
 
-        <div id="todoList">
+    <main>
+        <div id="formDiv">
+            <h2>Fyll i uppgift:</h2>    
+            <form id="todoForm">
+                <label class="label" for="task">Uppgift:</label>
+                <br>
+                <input type="text" id="task" name="task">
+                <br>
+                <label class="label" for="priority">Prioritet:</label>
+                <br>
+                <input type="number" id="priority" name="priority">
+                <p id="instruction"></p>
+                <br>
+                <button class="submit-button" id="submitButton" type="submit">Skicka</button>
+            </form>
+        </div>
+
+        <div id="todoDiv">
             <h2>Att göra:</h2>
-            <!--            <label class="label" for=checkbox1></label>
-            <input type="checkbox" id="checkbox1" name="checkbox1">-->
+            <div id="todoList">
+                
+                <!--            <label class="label" for=checkbox1></label>
+                <input type="checkbox" id="checkbox1" name="checkbox1">-->
+            </div>
         </div>
     </main>
+
+    <footer>
+        <p>Programmering i TypeScript</p>
+        <p>Moment 2</p>
+        <p>Amanda Thim - amth2302</p>
+    </footer>
 
 </body>
 </html>
