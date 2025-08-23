@@ -5,5 +5,5 @@ export default interface Todo {
     optional: true,
     default: false
   },
-  priority: number/* 1 ska vara viktigast och 3 minst viktigt*/
+  priority: number //1 ska vara viktigast och 3 minst viktigt
 }

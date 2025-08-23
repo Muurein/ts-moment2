@@ -6,7 +6,7 @@
     <title>Moment 2</title>
 
     <link rel="stylesheet" href="src/css/styles.css">
-    <script src="src/main.ts" type="module" defer></script>
+    <script src="src/main.ts" type="module"></script>
 </head>
 
 <body>
@@ -14,6 +14,7 @@
         <h1 class="logo">Månadens uppgifter</h1>
     </header>
 
+    <!--formulär-->
     <main>
         <div id="formDiv">
             <h2>Fyll i uppgift:</h2>    
@@ -22,22 +23,19 @@
                 <br>
                 <input type="text" id="task" name="task">
                 <br>
-                <label class="label" for="priority">Prioritet:</label>
+                <label class="label" for="priority">Prioritet (1-3):</label>
                 <br>
                 <input type="number" id="priority" name="priority">
-                <p id="instruction"></p>
+                <p id="errorMessage"></p>
                 <br>
                 <button class="submit-button" id="submitButton" type="submit">Skicka</button>
             </form>
         </div>
 
+        <!--utskriftsområde-->
         <div id="todoDiv">
             <h2>Att göra:</h2>
-            <div id="todoList">
-                
-                <!--            <label class="label" for=checkbox1></label>
-                <input type="checkbox" id="checkbox1" name="checkbox1">-->
-            </div>
+            <div id="todoList"></div>
         </div>
     </main>
 

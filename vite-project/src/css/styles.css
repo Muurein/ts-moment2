@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: rgb(252, 249, 240);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -31,6 +31,7 @@ main {
     padding-right: 2%;  
 }
 
+/* formulär */
 #formDiv {
     background-color: rgb(255, 250, 232);
     border: 10px dotted rgb(221, 196, 159);
@@ -42,8 +43,10 @@ main {
 }
 
 #formDiv input {
+    margin-top: 5px;
     margin-bottom: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
+    height: 1.5em;
 }
 
 #formDiv button {
@@ -53,10 +56,18 @@ main {
     padding: 5%;
     border-radius: 50%;
     border: 1px solid rgb(102, 69, 48);
+    cursor: pointer;
 }
 
+#errorMessage {
+    color: rgb(177, 11, 11);
+    font-weight: 600;
+}
+
+
+/* utskriftsområde */
 #todoDiv{
-    background-color: rgb(255, 250, 232);
+    background-color: rgb(253, 250, 239);
     border: 10px dotted rgb(221, 196, 159);
     margin-bottom: 20%;
     padding-top: 10%;
@@ -66,6 +77,7 @@ main {
 #todoLDiv h2 {
     color:black;
 }
+
 #todoDiv p {
     margin: 3%;
 }
@@ -85,10 +97,71 @@ main {
     cursor: pointer;
 }
 
-hr {
-    width: 180px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    margin-bottom: 30px;
+
+/* footer */
+footer {
+    text-align: center;
+    padding-top: 1.2em;
+}
+
+
+/* tablet */
+@media (min-width: 600px) {
+
+    main {
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    /* formulär */
+    #formDiv {
+        margin-bottom: 15%;
+    }
+
+    #formDiv input {
+        width: 50%;
+    }
+
+    /* utskriftsområde */
+    #todoDiv {
+        margin-bottom: 10%;
+    }
+
+    #formDiv button, #todoDiv button {
+        padding: 4%;
+    }
+
+    #todoDiv button {
+        margin-bottom: 15%;
+    }
+
+}
+
+
+/* desktop */
+@media (min-width: 1024px) {
+
+    main {
+        width: 40%;
+        margin-top: -20px;
+    }
+
+    /* formulär */
+    #formDiv {
+        margin-bottom: 12%;
+    }
+
+    /* utskriftsområde */
+    #todoDiv {
+        margin-bottom: 0;
+    }
+
+    #todoDiv h2 {
+        margin-bottom: 0.7em;
+    }
+
+    #todoDiv button {
+        margin-bottom: 11%;
+    }
+
 }
