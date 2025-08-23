@@ -5,8 +5,10 @@ Projektet ska skapa en "att göra"-applikation med TypeScript och objektorienter
 Användaren ska kunna lägga till uppgifter, ta bort dem och markera dem som klara. 
 
 
-## Steg
+## Lösning
+Användaren lägger till en uppgift i formuläret där de också fyller i vilken prioritet uppgiften har (1 till 3 där 1 är viktigast). Hen får ett felmeddelande om alla fält inte är ifyllda eller om prioritetsfältet inte är korrekt ifyllt.
 
-Steg 1 : skapa todo-interface v
+Därefter visas uppgiften i ett fält under formuläret - själva "att göra"-listan. Ett interface bygger upp hur den ska visas och en klass (TodoList) fullföljer det med funktioner som addTodo(lägger till en uppgift) och markToDoCompleted(tar bort en uppgift genom att markera den som klar).
 
-Steg 2: använd todo-klass
+### LocalStorage
+Uppgiften sparas också till LocalStorage, men det sköts via en annan klass som sedan importeras till TodoList. 

@@ -1,5 +1,4 @@
 import TodoList from "./classTodoList.ts";
-// import TodoList from "./classTodoList.ts";
 
 export default class LocalStorage{
   key!: "tasks";
@@ -22,6 +21,5 @@ export default class LocalStorage{
 
     //återskapa todos
     return new TodoList(json);
-
   }
 }
